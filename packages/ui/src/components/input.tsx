@@ -1,0 +1,18 @@
+import * as React from "react"
+
+import { cn } from "@workspace/ui/lib/utils"
+
+function Input({ className, ...props }: React.ComponentProps<"input">) {
+  return (
+    <input
+      data-slot="input"
+      className={cn(
+        "border-input bg-background ring-offset-background placeholder:text-muted-foreground focus-visible:ring-ring flex h-10 w-full border px-3 py-2 text-sm outline-none transition focus-visible:ring-2",
+        className,
+      )}
+      {...props}
+    />
+  )
+}
+
+export { Input }

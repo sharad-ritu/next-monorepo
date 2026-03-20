@@ -4,7 +4,12 @@
     "baseUrl": ".",
     "paths": {
       "@/*": ["./*"],
-      "@workspace/ui/*": ["../../packages/ui/src/*"]
+      "@workspace/auth": ["../../packages/auth/src/index.ts"],
+      "@workspace/config": ["../../packages/config/src/index.ts"],
+      "@workspace/content": ["../../packages/content/src/index.ts"],
+      "@workspace/db": ["../../packages/db/src/index.ts"],
+      "@workspace/ui/*": ["../../packages/ui/src/*"],
+      "@workspace/validation": ["../../packages/validation/src/index.ts"]
     },
     "plugins": [
       {
